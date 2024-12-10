@@ -1,15 +1,14 @@
-using System;
 using Shouldly;
 
 namespace Mnemonic.Tests;
 
-public class MnmemonicTests
+public class MnemonicGeneratorTests
 {
     [Fact]
     public void Should_Generate_Two_Words()
     {
         // Given, When
-        var result = Mnmemonic.Generate();
+        var result = MnemonicGenerator.Generate();
 
         // Then
         var parts = result.Split('-');
@@ -21,7 +20,7 @@ public class MnmemonicTests
     [InlineData('*')]
     public void Should_Include_Specified_Separator(char separator)
     {
-        var result = Mnmemonic.Generate(new MnemonicSettings
+        var result = MnemonicGenerator.Generate(new MnemonicSettings
         {
             Separator = separator,
         });

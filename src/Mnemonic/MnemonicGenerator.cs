@@ -2,7 +2,7 @@ using System;
 
 namespace Mnemonic;
 
-public static class Mnmemonic
+public static class MnemonicGenerator
 {
     /// <summary>
     /// Generates a mnemonic.

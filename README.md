@@ -17,7 +17,7 @@ $ dotnet add package Mnemonic
 using Mnemonic;
 
 // Generates a mnemonic, i.e. "agitated-davinci"
-string name = Mnemonic.Generate();
+string name = MnemonicGenerator.Generate();
 ```
 
 ## Building
