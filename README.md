@@ -5,6 +5,12 @@ that Docker does.
 I'm happy to add additional word lists if anyone 
 wants to contribute.
 
+## Installation
+
+```shell
+$ dotnet add package Mnemonic
+```
+
 ## Usage
 
 ```csharp
